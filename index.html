@@ -25,6 +25,7 @@
 
 </head>
 <body>
+      <div id="everything">
     <nav>
         <a href="#" class="nav__link nav__link--active">
          <i class="material-icons nav__icon">schedule</i>
@@ -100,7 +101,7 @@
 
     </section>
 </div>
-    
+</div>        
 
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -135,6 +136,13 @@
         },
       });
     </script>
+            <script>
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      
+      var x = document.getElementById("everything");
+      x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+      </script>
 
 </body>
 </html>
